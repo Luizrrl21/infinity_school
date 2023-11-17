@@ -12,3 +12,4 @@ for i in range(5):
     lista.append(palavra)
 
 print(maior(lista))
+
