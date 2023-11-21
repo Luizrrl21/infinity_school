@@ -1,4 +1,4 @@
-opcoes = ["Pedra", "Papel", "Tesoura"]
+opcoes = ["pedra", "papel", "tesoura"]
 
 def bot_jokenpo():
     import random
@@ -19,7 +19,7 @@ def cond_jokenpo(escolha: str, maquina: str = bot_jokenpo()):
             "bot" : 0
         }
     #Vitória
-    elif (escolha == "Papel" and maquina == "Pedra") or (escolha == "Pedra" and maquina == "Tesoura") or (escolha == "Tesoura" and maquina == "Papel"):
+    elif (escolha == "papel" and maquina == "pedra") or (escolha == "pedra" and maquina == "tesoura") or (escolha == "tesoura" and maquina == "papel"):
         print(f"Você: {escolha} x Máquina: {maquina}")
         print(f"Você ganhou!")
         print("**************************************")
