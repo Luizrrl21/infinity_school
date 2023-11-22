@@ -4,17 +4,15 @@
 #"Reprovado" se a média for menor que 7, "Aprovado" se a média for maior ou igual a 7, e
 #"Parabéns, sua média é 10" se a média for igual a 10.
 
-import os
-
 def media(lista: list):
     return round(sum(lista)/len(lista),2)
 
 def situacao(valor: float):
     if valor == 10:
         return "Parabéns"
-    if valor >= 7:
+    elif valor >= 7:
         return "Aprovado"
-    if valor < 7:
+    else:
         return "Reprovado"
 
 notas = []
@@ -24,7 +22,6 @@ nome = str(input("Digite o nome do Aluno: "))
 
 while True:
     choice = str(input("O que você deseja fazer? "))
-    os.system('cls')
     if choice == "sair":
         break
     elif choice == "add_nota":
