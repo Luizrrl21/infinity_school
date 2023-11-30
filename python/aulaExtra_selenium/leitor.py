@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 import pyttsx3
 
 #Limpando terminal
-os.system('cls')
+# os.system('cls')
 
 #Configuração
 opcoes = Options()
