@@ -14,24 +14,34 @@ def situacao(valor: float):
         return "Aprovado"
     else:
         return "Reprovado"
+    
+def opcao(choice: str, dados: list, nome:str):
+    opcoes = ("add", "sair")
+    if choice == "sair":
+        return ["sair", f"O aluno {nome} está com a média {media(dados)}. Situação: {situacao(media(dados))}"]
+    elif choice == "add":
+        while True:
+            nota = float(input("Digite a nota do Aluno: "))
+            if nota >= 0 and nota <= 10:
+                dados.append(nota)
+                return (f"Nota adicionada ao aluno {nome}.")
+            else:
+                print("Erro! Digite um número válido")
+
+    else:
+        return (f"Erro! Tente digitar uma das opções: {opcoes}")
 
 notas = []
-opcoes = ("add_nota", "verificar_situacao", "sair")
-
 nome = str(input("Digite o nome do Aluno: "))
 
 while True:
     choice = str(input("O que você deseja fazer? "))
-    if choice == "sair":
+    funcao = opcao(choice=choice, dados=notas, nome=nome)
+    if funcao[0] == "sair":
+        print(funcao[1])
         break
-    elif choice == "add_nota":
-        nota = float(input("Digite a nota do Aluno: "))
-        notas.append(nota)
-        print(f"Nota adicionada ao aluno {nome}.")
-    elif choice == "verificar_situacao":
-        print(f"O aluno {nome} está com a média {media(notas)}. Situação: {situacao(media(notas))}")
     else:
-        print(f"Erro! Tente digitar uma das opções: {opcoes}")
+        print(funcao)
 
 
 
