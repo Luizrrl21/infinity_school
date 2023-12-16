@@ -21,12 +21,15 @@ def opcao(choice: str, dados: list, nome:str):
         return ["sair", f"O aluno {nome} está com a média {media(dados)}. Situação: {situacao(media(dados))}"]
     elif choice == "add":
         while True:
-            nota = float(input("Digite a nota do Aluno: "))
-            if nota >= 0 and nota <= 10:
-                dados.append(nota)
-                return (f"Nota adicionada ao aluno {nome}.")
-            else:
-                print("Erro! Digite um número válido")
+            try:
+                nota = float(input("Digite a nota do Aluno: "))
+                if nota >= 0 and nota <= 10:
+                    dados.append(nota)
+                    return (f"Nota adicionada ao aluno {nome}.")
+                else:
+                    print("Erro! Digite um número de 0 a 10")
+            except:
+                print("Erro! Digite um número!")
 
     else:
         return (f"Erro! Tente digitar uma das opções: {opcoes}")
@@ -42,9 +45,3 @@ while True:
         break
     else:
         print(funcao)
-
-
-
-    
-    
-    
