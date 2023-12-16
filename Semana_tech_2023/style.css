@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Press+Start+2P&display=swap');
+
+
+body{
+    background-color: black;
+    font-family: "Nunito";
+    color: white    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu_logo{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.menu_logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.menu_lista{
+    display: flex;
+    align-items: center;
+    gap: 35px
+}
+
+.menu_lista_item{
+    color: white;
+    font-family: "Press Start 2P";
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 25px;
+}
+
+.menu_lista_item:hover{
+    color: #2abaad;
+    transform: scale(1.1);
+}
+
+.menu_curriculo{
+    background-color: #2abaad;
+    color: white;
+    font-family: "Press Start 2P";
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu_curriculo:hover{
+    background-color: white;
+    color: #2abaad;
+}
+
+.home{
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/0a/b8/ce/0ab8ce6d94dc4bd5183e953ad6ef797d.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Press Start 2P";
+}
+
+.home_infos{
+    background-color: rgba(0,0,0,0.6);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0px, 0px, 20px, 20px;
+    gap:16px
+}
+
+.home_img{
+    max-width: 300px;
+    background-color: #2abaae9c;
+    border: 2px solid white;
+    border-radius: 10%;
+}
+
+.home_nome{
+    font-size: 40px;
+}
+
+.home_area{
+    font-size: 20px;
+    color:#2abaad
+}
