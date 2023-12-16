@@ -22,5 +22,5 @@ def conv_cent(valor, app):
         app.after(2000, lambda: delete_message(cent))
     except:
         metro = Label(text="Digite um número",master=app, bg="black", fg="red")
-        metro.grid(row=3,column=0)
+        metro.grid(row=3,column=1)
         app.after(2000, lambda: delete_message(metro))
