@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <header class="menu">
+        <img class="menu_logo" src="./files/logo.png" alt="">
+        <nav class="menu_nav">Home</nav>
+        <nav class="menu_nav">Produtos</nav>
+        <nav class="menu_nav">Galeria</nav>
+        <a class="menu_contato" href="./contato.html">Contato</a>
+    </header>
+
+
+    <form class="contato" action="/enviar" method="post">
+        <label class="contato_titulo" for="nome">Nome:</label>
+        <input class="contato_entry" type="text" id="nome" name="nome" required><br>
+
+        <label class="contato_titulo" for="email">E-mail:</label>
+        <input class="contato_entry" type="email" id="email" name="email" required><br>
+
+        <label class="contato_titulo" for="telefone">Telefone:</label>
+        <input class="contato_entry" type="tel" id="telefone" name="telefone" required><br>
+
+        <label class="contato_titulo" for="mensagem">Mensagem:</label><br>
+        <textarea class="contato_mensagem"id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Enviar Mensagem">
+    </form>
+
+</body>
+</html>

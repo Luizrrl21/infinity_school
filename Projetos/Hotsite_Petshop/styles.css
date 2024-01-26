@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Oswald&family=Rubik+Bubbles&display=swap');
+
+body{
+    background-color: #F4FFFD;
+}
+
+:root {
+    --cor-primaria: #318430;
+    --cor-secundaria: #FF914D;
+    --cor-terciaria: #766C7F;
+
+    --font-menu: 'Rubik Bubbles'
+    --fonte-principal: "Oswald"
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik Bubbles';
+    font-size: 40px;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+}
+
+.menu_logo{
+    max-width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu_logo:hover{
+    background-color: var(--cor-secundaria);
+    transform: scale(1.1);
+}
+
+.menu_nav{
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.menu_nav:hover{
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu_contato{
+    transition: 0.5s ease-in-out;
+    background-color: #F4FFFD;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cor-secundaria)
+}
+
+.menu_contato:hover{
+    background-color: #dddddd;
+    border-radius: 10px;
+    color: #f75f00
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home_capa{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 98%;
+    background-color: white;
+}
+
+.home_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.home_titulo{
+    font-size: 40px;
+}
+
+.home_texto{
+    font-size: 30px;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10PX;
+    padding: 30px;
+}
+
+.contato_titulo{
+    color: var(--cor-secundaria);
+}
