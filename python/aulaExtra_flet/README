@@ -1,0 +1,3 @@
+Caso o pip install do Flet não der certo, criar um ambiente virtual no Python
+
+Help -> Welcome -> Python File -> Enviroment -> .venv

@@ -1,0 +1,6 @@
+const: Váriavel não altera
+let: Váriavel que altera
+Number: Converte em número (Não tem diferença de Int e Float)
+prompt: Input
+
+https://dontpad.com/aulajsdom
