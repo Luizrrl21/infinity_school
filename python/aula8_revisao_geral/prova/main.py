@@ -1,5 +1,4 @@
 from funcoes import *
-import os
 
 bd = []
 
@@ -22,20 +21,26 @@ while True:
         
         print("")
 
-        os.system("cls")
         match menu:
             case 1:
                 add(bd)
             case 2:
                 if bd == []:
-                    print("Vázio, tente adicionar um valor primeiro")
+                    print("Vázio, tente adicionar um item primeiro")
                 else:
                     ver(bd)
             case 3:
-                print("Att")
+                if bd == []:
+                    print("Vázio, tente adicionar um item primeiro")
+                else:
+                    att(bd)
             case 4:
-                print("Del")
+                if bd == []:
+                    print("Vázio, tente adicionar um item primeiro")
+                else:
+                    rem(bd)
             case 0:
+                print(f"{cores(texto='Compra finalizada, total a pagar:', cor='green')} R${totalProdutos}")
                 break
             case _:
                 print(cores("ERRO! Número Inválido!","red"))
@@ -44,5 +49,4 @@ while True:
         totalProdutos = total(bd)
         print(f'{cores(f"Valor Total: ","blue")} R${total(bd)}')
     except:
-        os.system("cls")
         print(cores("ERRO! Digite um número do menu","red"))

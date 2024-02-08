@@ -68,19 +68,62 @@ def ver(lista:list):
 """)
         
 def att(lista:list):
-    ajuste = str(input("Qual produto você quer alterar? "))
+    ajuste = str(input("Qual produto você quer alterar? ")).upper()
     achou = False
     for i in lista:
         if i["prod"] == ajuste:
             achou = True
-            n_nome = str(input(cores("Novo nome:","gray")))
-            n_qtd = float(input(cores("Nova Quantidade:","gray")))
-            n_price = float(input(cores("Novo Preço:", "gray")))
+            if achou:
+                i["prod"] = str(input(cores("Novo nome:","gray"))).upper()
 
-            if n_nome != "":
-                i["prod"] = n_nome
-            if n_qtd != "":
-                i["qtd"] = n_qtd
-            if n_price != "":
-                i["pric"] = n_price
+                while True:
+                    try:
+                        i["qtd"] = float(input(cores("Nova Quantidade:","gray")))
+                        break
+                    except:
+                        print("\033[0;49;31mERRO! Digite um número\033[0;0m")
 
+                while True:
+                    try:
+                        i["price"] = float(input(cores("Novo Preço:", "gray")))
+                        break
+                    except:
+                        print("\033[0;49;31mERRO! Digite um número\033[0;0m")
+
+                i["subtotal"] = round(i["qtd"]*i["price"],2)
+                print(f"\033[0;49;90mValor:\033[0;0m R${i['subtotal']}")
+                print("")
+
+                print(cores(texto="Produto editado",cor="gray"))
+                break
+            else:
+                pass
+        else:
+            continue
+    if achou:
+        pass
+    else:
+        print(cores(texto="ERRO! Produto não identificado", cor="red"))
+
+def rem(lista:list):
+    ajuste = str(input("Qual produto você quer excluir? ")).upper()
+    achou = False
+    for i in lista:
+        if i["prod"] == ajuste:
+            achou = True
+            while True:
+                excluir = str(input(cores(texto=f"Deseja excluir {i['prod']} da lista? (s/n): ", cor="red"))).upper()
+                if excluir == "S":
+                    lista.remove(i)
+                    print(cores(texto="ITEM EXLUÍDO!", cor="red"))
+                    break
+                elif excluir == "N":
+                    break
+                else:
+                    print("Opção Inválida, tente novamente")
+        else:
+            continue
+    if achou:
+        pass
+    else:
+        print(cores(texto="Produto não identificado", cor="red"))
