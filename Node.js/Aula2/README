@@ -1,1 +1,27 @@
 invertexto: https://www.invertexto.com/612aula2node
+
+# arquivo .env com essas variáveis na pasta backend: #
+  DB_HOST="localhost"
+  DB_USER="root"
+  DB_PASSWORD="Mysql102030"
+  DB_DATABASE="banco_aula2"
+
+# Banco de Dados SQL Workbench: # 
+  CREATE DATABASE banco_aula2;
+  USE banco_aula2;
+  
+  CREATE TABLE usuarios(
+  	id INT AUTO_INCREMENT PRIMARY KEY,
+      nome NVARCHAR(255) NOT NULL,
+      email NVARCHAR(55) NOT NULL UNIQUE,
+      senha NVARCHAR(20) NOT NULL,
+      cpf CHAR(11) NOT NULL UNIQUE
+  );
+  
+  INSERT INTO usuarios (nome, email, senha, cpf)
+  VALUES
+  ("Luiz", "luiz@gmail", "123456J", "12345678900"),
+  ("Nyl", "nyl@gmail.com", "123456", "12345678901"),
+  ("Maria", "maria@gmail.com", "123456Ab", "12345678902");
+
+# Dar npm install no backend para baixar os packages necessários
