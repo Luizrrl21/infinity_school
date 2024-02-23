@@ -25,3 +25,8 @@ invertexto: https://www.invertexto.com/612aula2node
   ("Maria", "maria@gmail.com", "123456Ab", "12345678902");
 
 # Dar npm install no backend para baixar os packages necessários
+# Criar arquivo .gitignore com o seguinte txt:
+  # .gitignore
+  
+  node_modules/
+  .env
