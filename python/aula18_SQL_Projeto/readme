@@ -1,0 +1,27 @@
+Configure um ambiente virtual para o projeto, garantindo isolamento das dependências.
+
+Banco de Dados:
+Escolha um sistema de gerenciamento de banco de dados (por exemplo, MySQL) e crie um banco para armazenar informações dos personagens, como nome, nível, pontos de vida, etc.
+
+Classes:
+Crie classes para representar personagens (ex: Personagem) e inimigos (ex: Inimigo).
+
+Criação de Personagens:
+Implemente um sistema que permita aos jogadores criar personagens com atributos como nome, classe, nível, pontos de vida, etc.
+
+Batalhas e Inimigos:
+Desenvolva um sistema de batalha onde os personagens possam enfrentar inimigos, incluindo lógica de combate, ataques e defesa.
+
+Persistência de Dados:
+Estabeleça conexão com o banco de dados para salvar e carregar informações dos personagens, como nível e pontos de vida, permitindo aos jogadores continuar o jogo.
+
+Interface de Usuário:
+Utilize uma biblioteca gráfica, como tkinter, para criar uma interface que permita aos jogadores interagir com o jogo. Eles devem poder criar personagens, lutar contra inimigos e 
+visualizar informações dos personagens.
+
+Níveis e Progressão:
+Implemente um sistema de progressão que permita aos personagens subirem de nível ao derrotarem inimigos, ganhando novas habilidades conforme avançam.
+
+Histórico de Jogos:
+Adicione a funcionalidade de salvar e carregar jogos anteriores, possibilitando que os jogadores continuem de onde pararam.
+Este projeto combina elementos de programação orientada a objetos, persistência de dados e interfaces gráficas para criar uma experiência de jogo interativa e envolvente.
