@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML</title>
+</head>
+
+<body>
+    <h1>Livros de Receitas</h1>
+    <ol>
+        <li>
+            Baião de Dois
+            <ul>
+                <li>
+                    Ingredientes
+                    <ol>
+                        <li>Arroz</li>
+                        <li>Feijão</li>
+                        <li>Queijo</li>
+                        <li>Fé</li>
+                    </ol>
+                </li>
+                <li>
+                    Modo de Preparo
+                    <ol>
+                        <li>Pega todos os ingredientes</li>
+                        <li>Taca na panela</li>
+                        <li>Taca no prato</li>
+                        <li>E reza</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>Batata Recheada</li>
+        <li>Lasanha de Camarão</li>
+    </ol>
+</body>
+
+</html>
+
+
+
+
+FORMULÁRIO
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2 - HTML</title>
+</head>
+
+<body>
+    <h2>Meu formulário</h2>
+    <form>
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario">
+
+        <br>
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade">
+
+        <br>
+        <label for="email">E-mail*</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <br>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="*************">
+
+        <br>
+        <label for="data_nasc">Data de nascimento</label>
+        <input type="date" id="data_nasc" name="data_nasc">
+
+        <br>
+        <label for="horario_chegada">Horario de Chegada</label>
+        <input type="time" id="horario_chegada" name="horario_chegada">
+
+        <br>
+        <label for="cor">Escolha uma cor</label>
+        <input type="color" id="cor" name="cor">
+
+        <br>
+        <label for="arquivo">Escolha uma arquivo</label>
+        <input type="file" id="arquivo" name="arquivo">
+
+
+        <br>
+        <label for="barrinha">Mova a barra</label>
+        <input type="range" id="barrinha" name="barrinha">
+
+        <br>
+        <label>Sexo</label>
+        <br>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <br>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+        <br>
+        <input type="radio" id="outros" name="sexo" value="outros">
+        <label for="outros">Outros</label>
+
+        <br>
+        <label>Linguagens</label>
+        <br>
+        <input type="checkbox" id="py" name="linguagens" value="Python">
+        <label for="py">Python</label>
+        <br>
+        <input type="checkbox" id="html" name="linguagens" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="checkbox" id="css" name="linguagens" value="CSS">
+        <label for="css">CSS</label>
+        <br>
+        <input type="checkbox" id="js" name="linguagens" value="Javascript">
+        <label for="js">Javascript</label>
+
+        <br>
+        <label for="cidade">Selecione sua cidade</label>
+        <br>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione uma opção</option>
+            <option value="fortaleza">Fortaleza</option>
+            <option value="macaranau">Macaranaú</option>
+            <option value="caucaia">Caucaia</option>
+            <option value="maranguape">Maranguape</option>
+        </select>
+
+        <br>
+        <label for="comentario">Comentário</label>
+        <br>
+        <textarea name="comentario" id="comentario" cols="19" rows="4"></textarea>
+
+        <br>
+        <button>Enviar</button>
+        <input type="reset">
+
+        <br>
+
+
+    </form>
+
+</body>
+
+</html>
