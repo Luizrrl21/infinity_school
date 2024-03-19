@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Aula 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <section class="cadastro">
+            <h2>Cadastro:</h2>
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" required>
+            <label for="senha">Senha*</label>
+            <input type="password" name="senha" id="senha" required>
+            <label for="info">Informações Adicionais:</label>
+            <textarea name="info" id="info" cols="30" rows="5"></textarea>
+        </section>
+        <section class="genero">
+            <div class="title_genero">
+                <h2 class="text_genero">Genêro:</h2>
+            </div>
+            <div class="sexo">
+                <div class="masculino">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="feminino">
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+        </section>
+        <section class="choices">
+            <div class="title_choices">
+                <h2>Benefícios:</h2>
+            </div>
+            <div class="opcoes">
+                <div class="op1">
+                    <input type="checkbox" name="plan_saude" id="op1">
+                    <label for="op1">Plano de saúde</label>
+                </div>
+                <div class="op2">
+                    <input type="checkbox" name="vale_ref" id="op2">
+                    <label for="op2">Vale-refeição</label>
+                </div>
+                <div class="op3">
+                    <input type="checkbox" name="vale_trans" id="op3">
+                    <label for="op3">Vale-transporte</label>
+                </div>
+                <div class="op4">
+                    <input type="checkbox" name="seguro" id="op4">
+                    <label for="op4">Seguro de vida</label>
+                </div>
+                <div class="op5">
+                    <input type="checkbox" name="plan_odon" id="op5">
+                    <label for="op5">Plano odontólogico</label>
+                </div>
+            </div>
+        </section>
+        <section class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </section>
+    </form>
+</body>
+
+</html>

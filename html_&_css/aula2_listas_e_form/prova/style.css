@@ -1,0 +1,111 @@
+/* Resetando estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.title_genero {
+  text-align: center;
+}
+
+.sexo {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.masculino {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  background-color: rgb(48, 186, 216);
+}
+
+.feminino {
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  background-color: pink;
+}
+
+.choices label {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.botoes {
+  margin: 5%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="reset"] {
+  background-color: #e91c1c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #ba1515;
+}
+
