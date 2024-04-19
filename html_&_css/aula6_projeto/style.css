@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  align-items: center;
+}
+
+main {
+  background-color: black;
+}
+
+.logo {
+  margin: 10px;
+  padding: 0;
+  width: 8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  margin: 2rem;
+  gap: 4rem;
+  width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+.menu_itens {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.character {
+  border: 2px solid;
+  border-color: yellow;
+  border-radius: 30px;
+}
+
+.menu_itens:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+.containter_background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  width: 97%;
+  margin: 0.5rem;
+  border: 5px solid;
+  padding: 0.5rem;
+  height: 48.5rem;
+  border-color: yellow;
+}
+.personagens {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personagem {
+  background-color: rgb(49, 50, 51);
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.personagem_nome {
+  color: yellow;
+}
+.personagem_poder {
+  color: white;
+}
+
+.personagem_img {
+  width: 100px;
+  height: 10rem;
+  padding: 10px;
+  border: 2px solid;
+  border-color: yellow;
+  border-radius: 100%;
+  background-color: black;
+}
